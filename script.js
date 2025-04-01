@@ -52,8 +52,8 @@ const displayAverageSalary = function(employeesArray) {
   }
   
   let totalSalary = 0;
-  for (let i = 0; i < employeesArray.length; i++) {
-    totalSalary += employeesArray[i].salary;
+  for (const element of employeesArray) {
+    totalSalary += element.salary;
   }
 
   const averageSalary = totalSalary / employeesArray.length;
@@ -72,8 +72,8 @@ const displayEmployees = function(employeesArray) {
 
   employeeTable.innerHTML = '';
 
-  for (let i = 0; i < employeesArray.length; i++) {
-    const currentEmployee = employeesArray[i];
+  for (const element of employeesArray) {
+    const currentEmployee = element;
 
     const newTableRow = document.createElement("tr");
 
